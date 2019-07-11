@@ -31,7 +31,7 @@ public class MyProfileActivity extends AppCompatActivity {
 
         ImageView profilePhoto = findViewById(R.id.imageview_profile_photo);
 
-        Picasso.get().load("https://i.imgur.com/jYkz8Ms.jpg").into(profilePhoto);
+        Picasso.get().load("https://i.imgur.com/jYkz8Ms.jpg").placeholder(R.drawable.avatar).into(profilePhoto);
     }
 
 }

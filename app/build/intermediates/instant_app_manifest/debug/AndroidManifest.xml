@@ -24,7 +24,7 @@
         android:usesCleartextTraffic="true" >
         <activity
             android:name="tk.crucial.alc4phase1.MyProfileActivity"
-            android:label="@string/title_activity_my_profile2"
+            android:label="@string/title_activity_my_profile"
             android:parentActivityName="tk.crucial.alc4phase1.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
@@ -33,7 +33,7 @@
         </activity>
         <activity
             android:name="tk.crucial.alc4phase1.AboutAlcActivity"
-            android:label="@string/title_activity_about_alc2"
+            android:label="@string/title_activity_about_alc"
             android:parentActivityName="tk.crucial.alc4phase1.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
