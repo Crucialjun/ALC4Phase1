@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,35 +8,43 @@
     tools:context=".AboutAlcActivity"
     tools:showIn="@layout/activity_about_alc">
 
-    <ProgressBar
-        android:backgroundTint="@color/colorAccent"
-        android:padding="2dp"
-        android:layout_gravity="center"
-        android:id="@+id/progressBarLoadingAlc"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:id="@+id/text_view_loading_about_alc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Loading please wait"
-        android:textColor="@color/colorAccent"
-        >
-
-    </TextView>
-
     <WebView
         android:id="@+id/webview_about_alc"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp" >
+        app:layout_constraintVertical_bias="1.0">
 
     </WebView>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/text_view_loading_about_alc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_please_wait"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toTopOf="@+id/progressBarLoadingAlc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/webview_about_alc">
+
+    </TextView>
+
+    <ProgressBar
+        android:id="@+id/progressBarLoadingAlc"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorAccent"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/webview_about_alc"
+        app:layout_constraintStart_toStartOf="@+id/webview_about_alc"
+        app:layout_constraintTop_toTopOf="@+id/webview_about_alc" />
+
+</android.support.constraint.ConstraintLayout>

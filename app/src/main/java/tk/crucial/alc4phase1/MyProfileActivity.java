@@ -1,5 +1,6 @@
 package tk.crucial.alc4phase1;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -10,6 +11,9 @@ import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
 
+import java.util.Objects;
+
+@SuppressLint("Registered")
 public class MyProfileActivity extends AppCompatActivity {
 
     @Override
@@ -27,11 +31,11 @@ public class MyProfileActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         ImageView profilePhoto = findViewById(R.id.imageview_profile_photo);
 
-        Picasso.get().load("https://i.imgur.com/jYkz8Ms.jpg").into(profilePhoto);
+        Picasso.get().load("https://i.imgur.com/jYkz8Ms.jpg").placeholder(R.drawable.avatar).into(profilePhoto);
     }
 
 }

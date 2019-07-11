@@ -9,9 +9,9 @@ import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-public class WebViewClass extends WebViewClient {
-    private TextView mTextView;
-    private ProgressBar mProgressBar;
+class WebViewClass extends WebViewClient {
+    private final TextView mTextView;
+    private final ProgressBar mProgressBar;
 
     WebViewClass(ProgressBar progressBar, TextView textView) {
         mProgressBar = progressBar;

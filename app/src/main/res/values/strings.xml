@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">ALC 4 Phase 1</string>
-    <string name="title_activity_about_alc2">AboutAlcActivity2</string>
-    <string name="title_activity_my_profile2">MyProfileActivity2</string>
+    <string name="title_activity_about_alc">About ALC</string>
+    <string name="title_activity_my_profile">My Profile</string>
+    <string name="my_profile">My Profile</string>
+    <string name="about_alc">About ALC</string>
+    <string name="welcome_to_alc_4_0">Welcome to ALC 4.0</string>
+    <string name="profile_photo">Profile Photo</string>
+    <string name="user_name">Nicholas Otieno</string>
+    <string name="track_android">Track: Android</string>
+    <string name="country_kenya">Country: Kenya</string>
+    <string name="email_nich_otieno_gmail_com">Email: nich.otieno@gmail.com</string>
+    <string name="phone_number">Phone Number: +254726575615</string>
+    <string name="slack_username_crucialjun">Slack Username: @Crucialjun</string>
+    <string name="loading_please_wait">Loading please wait</string>
 </resources>
